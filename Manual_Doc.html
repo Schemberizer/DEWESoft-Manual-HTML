@@ -21,19 +21,29 @@
 		<style>
 		
 			html{
-				border-left: 10vw solid #3C52FE;
+				border-left: 10vw solid #3C52FE;  <!-- Sets blue border on left and	right of the page -->
 				border-right: 10vw solid #3C52FE;
 				}
 				
 			body{
-				margin-left: 4%;
+				margin-left: 4%;  <!-- Base margins -->
 				margin-right: 4%;
 				}
 				
 			h1{
-				margin-left: 2%;
+				margin-left: 2%;	<!-- 1st headers style -->
 				font-family: Arial;
 				text-shadow: 2px 2px 2px gray;
+				}
+			
+			h3{
+				margin-left: 6%;
+				font-family: Arial;
+				text-shadow: 1px 1px 1px gray;
+				border: 4px solid #3C52FE;
+				padding: 2px;
+				border-radius: 6px;
+				background-color: lightgrey;
 				}
 				
 			h1.title{
@@ -46,6 +56,25 @@
 				margin-right: 4%;
 				list-style-type: circle;
 				font-family: Times New Roman;
+				}
+				
+			.inul{
+				list-style-type: lower-roman;
+				}
+				
+			.zoom {
+				margin-left: 50vw;
+				transition: transform .2s;
+				}
+			.zoom:hover {
+				transform: scale(2, 2);
+			}
+			
+			ul.list{
+				border-left: 0.5vw solid #3C52FE;
+				background-color: lightgrey;
+				margin-left: 10%;
+				margin-right: 50%;
 				}
 				
 		</style>
@@ -79,7 +108,7 @@
 				
 			</h2>
 			
-			<img src="Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
+			<img class=imgEnlarge src="Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
 			
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			
@@ -89,75 +118,109 @@
 				
 			</h1>
 			
-			<ul align="left"><font size= 4 color= "blue"><u>
+			<ul class=list align="left"><font size= 4 color= "blue"><u>
 			
-				<li>
+				<li><a href = "#InitialSetup">
 				
-					<a href = "#InitialSetup">
-						Initial Setup
-					</a>
+					Initial Setup
 					
-				</li>
-				<br>
-				<li>
+				</li></a>
 				
-					<a href = "#NewSensor">
-						New Sensor Setup
-					</a>
-					
-				</li>
-				<br>
-				<li>
+				<ul class=inul align="left"><font size= 3 color= "blue"><u>
 				
-					<a href = "#AnalogChannel">
-						Analog Channel Setup
-					</a>
+					<br>
 					
-				</li>
+					<li><a href = "#PoweringUp">
+					
+						Powering Up the DEWESoft System
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#OpeningSoftware" style="list-style-type: square;">
+					
+						Opening the DEWESoft X Software
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#CreateFolder" style="list-style-type: square;">
+					
+						Create a New Folder
+						
+					</li></a>
+				
+				</ul></font></u>
+				
 				<br>
-				<li>
+				
+				<li><a href = "#NewSensor">
+				
+					New Sensor Setup
 					
-					<a href = "#CounterChannel">
-						Counter Channel Setup
-					</a>
-					
-				</li>
+				</li></a>
+				
 				<br>
-				<li>
+				
+				<li><a href = "#AnalogChannel">
+				
+					Analog Channel Setup
 					
-					<a href = "#MeasuringData">
-						Measuring Data
-					</a>
-					
-				</li>
+				</a></li>
+				
 				<br>
-				<li>
+				
+				<li><a href = "#CounterChannel">
+				
+					Counter Channel Setup
 					
-					<a href = "#StoringData">
-						Storing Data
-					</a>
-					
-				</li>
+				</a></li>
+				
 				<br>
-				<li>
+				
+				<li><a href = "#MeasuringData">
+				
+					Measuring Data
 					
-					<a href = "#Sequence">
-						Sequence Setup
-					</a>
-					
-				</li>
+				</a></li>
+				
 				<br>
-				<li>
+				
+				<li><a href = "#StoringData">
+				
+					Storing Data
 					
-					<a href = "#SensorDiagram">
-						Sensor Diagrams
-					</a>
+				</a></li>
+				
+				<br>
+				
+				<li><a href = "#Sequence">
+				
+					Sequence Setup
 					
-				</li>
+				</a></li>
+				
+				<br>
+				
+				<li><a href = "#SensorDiagram">
+				
+					Sensor Diagrams
+					
+				</a></li>
+				
+				<br>
+				
+				<li><a href = "#Support">
+				
+					Support
+						
+				</a></li>
 				
 			</ul></font></u>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="InitialSetup">
 			
@@ -165,7 +228,33 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br>
+			
+			<h3 align="left"><a name="PoweringUp">
+				
+				Powering Up the DEWESoft System:
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="OpeningSoftware">
+				
+				Opening the DEWESoft X Software:
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="CreateFolder">
+				
+				Creating a New Folder:
+				
+			</h3></a>
+			
+			<br>
+			
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="NewSensor">
 			
@@ -173,7 +262,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="AnalogChannel">
 			
@@ -181,7 +270,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="CounterChannel">
 			
@@ -189,7 +278,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="MeasuringData">
 			
@@ -197,7 +286,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="StoringData">
 			
@@ -205,7 +294,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="Sequence">
 			
@@ -213,7 +302,7 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
 			
 			<h1 class="title" align="left"><a name="SensorDiagram">
 			
@@ -221,7 +310,15 @@
 				
 			</h1></a>
 			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
+			
+			<h1 class="title" align="left"><a name="Support">
+			
+				Support:
+				
+			</h1></a>
+			
+			<br><br><br><br><br><br>
 			
 			<p style="font-family: Times New Roman"><font size=2><Pre>
 			Joshua B. Schember
