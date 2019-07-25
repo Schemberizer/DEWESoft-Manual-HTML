@@ -13,428 +13,613 @@
 
 -->
 
+<html>
 
-<!DOCTYPE html>
-
-	<html>
+	<style>
 	
-		<style>
-		
-			html{
-				border-left: 10vw solid #3C52FE;
-				border-right: 10vw solid #3C52FE;
-				}
-				
-			body{
-				margin-left: 4%;
-				margin-right: 4%;
-				}
-				
-			h1{
-				margin-left: 2%;
-				font-family: Arial;
-				text-shadow: 2px 2px 2px gray;
-				}
-			
-			h3{
-				margin-left: 6%;
-				font-family: Arial;
-				text-shadow: 1px 1px 1px gray;
-				border-left: 4px double #3C52FE;
-				border-bottom: 4px double #3c52fe;
-				padding: 2px;
-				border-radius: 6px;
-				background-color: lightgrey;
-				}
-			
-			h1.title{
-				border: 8px outset lightgrey;
-				background-color: #E9E9E9;
-				}
-				
-			ul{
-				margin-left: 4%;
-				margin-right: 4%;
-				list-style-type: circle;
-				font-family: Times New Roman;
-				}
-				
-			.inul{
-				list-style-type: lower-roman;
-				}
-				
-			.zoom {
-				margin-left: 50vw;
-				position: absolute;
-				right: 15%;
-				width: 20vw;
-				height: 20vw;
-				transition: transform .2s;
-				}
-			.zoom:hover {
-				transform: scale(2, 2);
+		html{
+			border-left: 10vw solid #3C52FE;
+			border-right: 10vw solid #3C52FE;
 			}
 			
-			ul.list{
-				border-left: 0.5vw solid #3C52FE;
-				background-color: lightgrey;
-				margin-left: 10%;
-				margin-right: 50%;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				}
-				
-			ul.task{
-				margin-left: 10%;
-				margin-right: 40%;
-				list-style-type: decimal;
-				font-family: Arial;
-				background-color: #F5F5F5;
-				padding-top: 10px;
-				padding-left: 25px;
-				}
-				
-			p{
-				margin-left: 4%;
-				margin-right: 40%;
-				font-family: Arial;
-				}
-				
-		</style>
+		body{
+			margin-left: 4%;
+			margin-right: 4%;
+			}
+			
+		p{
+			margin-left: 4%;
+			margin-right: 40%;
+			font-family: Arial;
+			}
+			
+		h1{
+			margin-left: 2%;
+			font-family: Arial;
+			text-shadow: 2px 2px 2px gray;
+			}
 		
-		<head>
+		h3{
+			margin-left: 6%;
+			font-family: Arial;
+			text-shadow: 1px 1px 1px gray;
+			border-left: 4px double #3C52FE;
+			border-bottom: 4px double #3c52fe;
+			padding: 0.25%;
+			border-radius: 0px 0px 0px 8px;
+			background-color: lightgrey;
+			}
 		
-			<title>
-			
-				DEWESoft Operation Manual
-				
-			</title>
-			
-		</head>
+		ul{
+			margin-left: 4%;
+			margin-right: 4%;
+			list-style-type: circle;
+			font-family: Times New Roman;
+			}
 		
-		<body>
+		h1.title{
+			border: 8px outset lightgrey;
+			background-color: #E9E9E9;
+			}
 		
-			<img src="Pictures/Fisher_Logo.jpg" alt="Fisher Dynamics Logo" style="height: 7vw; width: 14vw; position: absolute; top: 10%; left: 15%;">
-			<img src="Pictures/Dewesoft_Logo.png" alt="DEWESoft Logo" style="height: 7vw; width: 15vw; position: absolute; top: 10%; right: 15%;">
+		ul.list{
+			border-left: 0.5vw solid #3C52FE;
+			background-color: lightgrey;
+			margin-left: 10%;
+			margin-right: 50%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			}
 			
-			<h1 align= "center" class="title" style="margin-left: 30%; margin-right: 30%; margin-top: 20%;"><font size=7>
+		ul.task{
+			margin-left: 10%;
+			margin-right: 40%;
+			list-style-type: decimal;
+			font-family: Arial;
+			background-color: #F5F5F5;
+			border-radius: 10px 40px;
+			padding: 1% 1% 8% 3%;
+			}
 			
-				DEWESoft Operation Manual
+		p.info{
+			background-color: #F5F5F5;
+			border-radius: 10px 40px;
+			padding: 1% 1% 10% 1%;
+			}
+			
+		.inul{
+			list-style-type: lower-roman;
+			}
+			
+		.zoom {
+			margin-left: 50vw;
+			position: absolute;
+			right: 35%;
+			width: 5vw;
+			height: 5vw;
+			transition: transform .2s;
+			}
+		.zoom:hover {
+			z-index: 1;
+			transform: scale(12, 8);
+		}
+			
+	</style>
+	
+	<head>
+	
+		<title>
+		
+			DEWESoft Operation Manual
+			
+		</title>
+		
+	</head>
+	
+	<body>
+	
+		<img src="Pictures/Fisher_Logo.jpg" alt="Fisher Dynamics Logo" style="height: 7vw; width: 14vw; position: absolute; top: 10%; left: 15%;">
+		<img src="Pictures/Dewesoft_Logo.png" alt="DEWESoft Logo" style="height: 7vw; width: 15vw; position: absolute; top: 10%; right: 15%;">
+		
+		<h1 align= "center" class="title" style="margin-left: 30%; margin-right: 30%; margin-top: 20%;"><font size=7>
+		
+			DEWESoft Operation Manual
+			
+		</h1></font>
+		
+		<br>
+		
+		<h2 align="center">
+
+			For the SIRIUS SGTM model
+			
+		</h2>
+		
+		<img src="Pictures/Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<h1 align="left" class="title">
+		
+			Table of Contents:
+			
+		</h1>
+		
+		<ul class=list align="left"><font size= 4 color= "blue"><u>
+		
+			<li><a href = "#InitialSetup">
+			
+				Initial Setup
 				
-			</h1></font>
+			</li></a>
 			
-			<br>
+			<ul class=inul align="left"><font size= 3 color= "blue"><u>
 			
-				<h2 align="center">
-				
-					For the SIRIUS SGTM model
-					
-				</h2>
-			
-			<img src="Pictures/Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
-			
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			
-			<h1 align="left" class="title">
-			
-				Table of Contents:
-				
-			</h1>
-			
-			<ul class=list align="left"><font size= 4 color= "blue"><u>
-			
-				<li><a href = "#InitialSetup">
-				
-					Initial Setup
-					
-				</li></a>
-				
-				<ul class=inul align="left"><font size= 3 color= "blue"><u>
-				
-					<br>
-					
-					<li><a href = "#PoweringUp">
-					
-						Powering Up the DEWESoft System
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#OpeningSoftware">
-					
-						Opening the DEWESoft X Software
-						
-					</li></a>
-				
-				</ul></font></u>
-				
 				<br>
 				
-				<li><a href = "#AnalogChannel">
+				<li><a href = "#PoweringUp">
 				
-					Analog Channel Setup
-					
-				</a></li>
-				
-				<ul class=inul align="left"><font size= 3 color= "blue"><u>
-				
-					<br>
-					
-					<li><a href = "#NewSetup">
-					
-						Opening a New Channel Setup
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#ChannelSetup">
-					
-						Individual Channel Setup
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#Calibration">
-					
-						Channel Calibration
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#Offsetting">
-					
-						Offsetting Zero
-						
-					</li></a>
-				
-				</ul></font></u>
-				
-				<br>
-				
-				<li><a href = "#NewSensor">
-				
-					New Sensor Setup
+					Powering Up the DEWESoft System
 					
 				</li></a>
 				
 				<br>
 				
-				<ul class=inul align="left"><font size= 3 color= "blue"><u>
+				<li><a href = "#OpeningSoftware">
+				
+					Opening the DEWESoft X Software
 					
-					<li><a href = "#AddSensor">
-					
-						Adding a New Sensor
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#ChangeSensor">
-					
-						Changing Existing Sensor
-						
-					</li></a>
-					
-					<br>
-					
-					<li><a href = "#SensorEditor">
-					
-						Sensor Editor
-						
-					</li></a>
-				
-				</ul></font></u>
-				
-				<br>
-				
-				<li><a href = "#CounterChannel">
-				
-					Counter Channel Setup
-					
-				</a></li>
-				
-				<br>
-				
-				<li><a href = "#MeasuringData">
-				
-					Measuring Data
-					
-				</a></li>
-				
-				<br>
-				
-				<li><a href = "#StoringData">
-				
-					Storing Data
-					
-				</a></li>
-				
-				<br>
-				
-				<li><a href = "#Sequence">
-				
-					Sequence Setup
-					
-				</a></li>
-				
-				<br>
-				
-				<li><a href = "#SensorDiagram">
-				
-					Sensor Diagrams
-					
-				</a></li>
-				
-				<br>
-				
-				<li><a href = "#Support">
-				
-					Support
-						
-				</a></li>
-				
+				</li></a>
+			
 			</ul></font></u>
 			
-			<br><br><br><br><br><br>
+			<br>
 			
-			<h1 class="title" align="left"><a name="InitialSetup">
+			<li><a href = "#AnalogChannel">
 			
-				Initial Setup:
+				Analog Channel Setup
 				
-			</h1></a>
+			</a></li>
 			
-			<img src="Pictures/Dewesoft_System.jpg" alt="DEWESoft System" class=zoom>
+			<ul class=inul align="left"><font size= 3 color= "blue"><u>
 			
-				<p style="background-color: #F5F5F5; padding: 4px; padding-bottom: 20vw;">
-			
-					Information for the initial setup of the DEWESoft system
-			
-				</p>
-			
-				<h3 align="left"><a name="PoweringUp">
-					
-					Powering Up the DEWESoft System:
-					
-				</h3></a>
+				<br>
 				
-					<ul class=task style="padding-bottom: 17vw;">
+				<li><a href = "#NewSetup">
+				
+					Opening a New Channel Setup
 					
-						<img src="Pictures/Dewesoft_Ports.jpg" alt="DEWESoft Ports" class=zoom>
+				</li></a>
+				
+				<br>
+				
+				<li><a href = "#ChannelSetup">
+				
+					Individual Channel Setup
 					
-						<li>
-							Plug the 2-pin Lemo power cable into the "in"
-							on the back of the system
-							<font color="red">
-								(Red)
-							</font>
-						</li>
-						
-						<br>
-						
-						<li>
-							Plug the micro-USB cable from the DEWESoft into
-							the laptop
-							<font color="lightgreen">
-								(Green)
-							</font>
-						</li>
-						
-					</ul>
+				</li></a>
+				
+				<br>
+				
+				<li><a href = "#Calibration">
+				
+					Channel Calibration
+					
+				</li></a>
+				
+				<br>
+				
+				<li><a href = "#Offsetting">
+				
+					Offsetting Zero
+					
+				</li></a>
+			
+			</ul></font></u>
 			
 			<br>
 			
-				<h3 align="left"><a name="OpeningSoftware">
-					
-					Opening the DEWESoft X Software:
-					
-				</h3></a>
+			<li><a href = "#NewSensor">
+			
+				New Sensor Setup
+				
+			</li></a>
 			
 			<br>
 			
-				<h3 align="left"><a name="CreateFolder">
+			<ul class=inul align="left"><font size= 3 color= "blue"><u>
+				
+				<li><a href = "#AddSensor">
+				
+					Adding a New Sensor
 					
-					Creating a New Folder:
+				</li></a>
+				
+				<br>
+				
+				<li><a href = "#ChangeSensor">
+				
+					Changing Existing Sensor
 					
-				</h3></a>
+				</li></a>
+				
+				<br>
+				
+				<li><a href = "#SensorEditor">
+				
+					Sensor Editor
+					
+				</li></a>
+			
+			</ul></font></u>
 			
 			<br>
 			
-			<br><br><br><br><br><br>
+			<li><a href = "#CounterChannel">
 			
-			<h1 class="title" align="left"><a name="NewSensor">
-			
-				New Sensor Setup:
+				Counter Channel Setup
 				
-			</h1></a>
+			</a></li>
 			
-			<br><br><br><br><br><br>
+			<br>
 			
-			<h1 class="title" align="left"><a name="AnalogChannel">
 			
-				Analog Channel Setup:
+			
+			<li><a href = "#MeasuringData">
+			
+				Measuring Data
 				
-			</h1></a>
+			</a></li>
 			
-			<br><br><br><br><br><br>
+			<br>
 			
-			<h1 class="title" align="left"><a name="CounterChannel">
-			
-				Counter Channel Setup:
+			<ul class=inul align="left"><font size= 3 color= "blue"><u>
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<h1 class="title" align="left"><a name="MeasuringData">
-			
-				Measuring Data:
+				<li><a href = "#MeasureScreen">
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<h1 class="title" align="left"><a name="StoringData">
-			
-				Storing Data:
+					Measurement Screen
+					
+				</li></a>
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<h1 class="title" align="left"><a name="Sequence">
-			
-				Sequence Setup:
+				<br>
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<h1 class="title" align="left"><a name="SensorDiagram">
-			
-				Sensor Diagrams:
+				<li><a href = "#DesignTab">
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<h1 class="title" align="left"><a name="Support">
-			
-				Support:
+					Design Tab
+					
+				</li></a>
 				
-			</h1></a>
-			
-			<br><br><br><br><br><br>
-			
-			<p style="font-family: Times New Roman"><font size=2><Pre>
-			Joshua B. Schember
-			Engineering Intern
-			Fisher Dynamics 2019
-			</p></font></pre>
+				<br>
 				
-		<body>
+				<li><a href = "#EditGraph">
+				
+					Editing Graphs
+					
+				</li></a>
+			
+			</ul></font></u>
+			
+			<br>
+			
+			<li><a href = "#StoringData">
+			
+				Storing Data
+				
+			</a></li>
+			
+			<br>
+			
+			<li><a href = "#Sequence">
+			
+				Sequence Setup
+				
+			</a></li>
+			
+			<br>
+			
+			<li><a href = "#SensorDiagram">
+			
+				Sensor Diagrams
+				
+			</a></li>
+			
+			<br>
+			
+			<li><a href = "#Support">
+			
+				Support
+					
+			</a></li>
+			
+		</ul></font></u>
 		
-	</html>
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="InitialSetup">
+		
+			Initial Setup:
+			
+		</h1></a>
+		
+		<img src="Pictures/Dewesoft_System.jpg" alt="DEWESoft System" class=zoom>
+		
+			<p class=info>
+		
+				Information for the initial setup of the DEWESoft system
+		
+			</p>
+		
+			<h3 align="left"><a name="PoweringUp">
+				
+				Powering Up the DEWESoft System:
+				
+			</h3></a>
+			
+				<img src="Pictures/Dewesoft_Ports.jpg" alt="DEWESoft Ports" class=zoom>
+			
+				<ul class=task>
+				
+					<li>
+						Plug the 2-pin Lemo power cable into the "in"
+						on the back of the system
+						<font color="red">
+							(Red)
+						</font>
+					</li>
+					
+					<br>
+					
+					<li>
+						Plug the micro-USB cable from the DEWESoft into
+						the laptop
+						<font color="lightgreen">
+							(Green)
+						</font>
+					</li>
+					
+				</ul>
+			
+			<br>
+			
+			<h3 align="left"><a name="OpeningSoftware">
+				
+				Opening the DEWESoft X Software:
+				
+			</h3></a>
+			
+			<img src="Pictures/Screenshot (2).png" alt="Screenshot(2)" class=zoom>
+			<img src="Pictures/Screenshot (1).png" alt="Screenshot(1)" class=zoom style="right: 28%;">
+			
+				<ul class=task>
+				
+					<li>
+						Make sure the DEWESoft system is plugged in
+					</li>
+					
+					<br>
+				
+					<li>
+						Double click the DEWESoft X3 icon
+						
+						<font color="red">
+							(Red)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						If the DEWESoft system is not plugged in at first, plug it
+						in and a screen will pop up. Press the button to retry
+						
+						<font color="lightgreen">
+							(Green)
+						</font>
+						
+					</li>
+					
+				</ul>
+			
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="AnalogChannel">
+		
+			Analog Channel Setup:
+			
+		</h1></a>
+		
+			<p class=info>
+		
+				Creating new analog channel setups, senosr setups, and preparing a new setup for a test
+		
+			</p>
+		
+			<h3 align="left"><a name="NewSetup">
+				
+				Creating a New Channel Setup
+				
+			</h3></a>
+			
+			<img src="Pictures/Screenshot (3).png" alt="Screenshot(3)" class=zoom>
+			<img src="Pictures/Screenshot (4).png" alt="Screenshot(4)" class=zoom style="right: 28%;">
+			<img src="Pictures/Screenshot (3).png" alt="Screenshot(5)" class=zoom style="right: 21%;">
+			
+				<ul class=task>
+				
+					<li>
+						Make sure the DEWESoft system is plugged in
+					</li>
+					
+					<br>
+				
+					<li>
+						Double click the DEWESoft X3 icon
+						
+						<font color="red">
+							(Red)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						If the DEWESoft system is not plugged in at first, plug it
+						in and a screen will pop up. Press the button to retry
+						
+						<font color="lightgreen">
+							(Green)
+						</font>
+						
+					</li>
+					
+				</ul>
+			
+			<br>
+			
+			<h3 align="left"><a name="ChannelSetup">
+				
+				Individual Channel Setup
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="Calibration">
+				
+				Channel Calibration
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="Offsetting">
+				
+				Offsetting Zero
+				
+			</h3></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="NewSensor">
+		
+			New Sensor Setup:
+			
+		</h1></a>
+			
+			<p class=info>
+		
+				Setting up a new sensor in the DEWESoft software, saving a sensor setup, and using the sensor editor
+		
+			</p>
+		
+			<h3 align="left"><a name="NewSensor">
+				
+				Adding a New Sensor
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="ChangeSensor">
+				
+				Changing an Existing Sensor
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="SensorEditor">
+				
+				Sensor Editor
+				
+			</h3></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="CounterChannel">
+		
+			Counter Channel Setup:
+			
+		</h1></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="MeasuringData">
+		
+			Measuring Data:
+			
+		</h1></a>
+		
+			<p class=info>
+		
+				Manually measuring data on the measurement screen and manipulating the display
+		
+			</p>
+		
+			<h3 align="left"><a name="MeasureScreen">
+				
+				Measurement Screen
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="DesignTab">
+				
+				Design Tab
+				
+			</h3></a>
+			
+			<br>
+			
+			<h3 align="left"><a name="EditGraph">
+				
+				Editing Graph
+				
+			</h3></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="StoringData">
+		
+			Storing Data:
+			
+		</h1></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="Sequence">
+		
+			Sequence Setup:
+			
+		</h1></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="SensorDiagram">
+		
+			Sensor Diagrams:
+			
+		</h1></a>
+		
+		<br><br><br><br><br><br>
+		
+		<h1 class="title" align="left"><a name="Support">
+		
+			Support:
+			
+		</h1></a>
+		
+		<br><br><br><br><br><br>
+		
+		<p style="font-family: Times New Roman"><font size=2><Pre>
+		Joshua B. Schember
+		Engineering Intern
+		Fisher Dynamics 2019
+		</p></font></pre>
+			
+	<body>
+	
+</html>
