@@ -21,17 +21,17 @@
 		<style>
 		
 			html{
-				border-left: 10vw solid #3C52FE;  <!-- Sets blue border on left and	right of the page -->
+				border-left: 10vw solid #3C52FE;
 				border-right: 10vw solid #3C52FE;
 				}
 				
 			body{
-				margin-left: 4%;  <!-- Base margins -->
+				margin-left: 4%;
 				margin-right: 4%;
 				}
 				
 			h1{
-				margin-left: 2%;	<!-- 1st headers style -->
+				margin-left: 2%;
 				font-family: Arial;
 				text-shadow: 2px 2px 2px gray;
 				}
@@ -40,15 +40,16 @@
 				margin-left: 6%;
 				font-family: Arial;
 				text-shadow: 1px 1px 1px gray;
-				border: 4px solid #3C52FE;
+				border-left: 4px double #3C52FE;
+				border-bottom: 4px double #3c52fe;
 				padding: 2px;
 				border-radius: 6px;
 				background-color: lightgrey;
 				}
-				
+			
 			h1.title{
-				border-left: 8px ridge #D2D2D2;
-				border-bottom: 8px ridge #D2D2D2;
+				border: 8px outset lightgrey;
+				background-color: #E9E9E9;
 				}
 				
 			ul{
@@ -64,6 +65,10 @@
 				
 			.zoom {
 				margin-left: 50vw;
+				position: absolute;
+				right: 15%;
+				width: 20vw;
+				height: 20vw;
 				transition: transform .2s;
 				}
 			.zoom:hover {
@@ -75,6 +80,24 @@
 				background-color: lightgrey;
 				margin-left: 10%;
 				margin-right: 50%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				}
+				
+			ul.task{
+				margin-left: 10%;
+				margin-right: 40%;
+				list-style-type: decimal;
+				font-family: Arial;
+				background-color: #F5F5F5;
+				padding-top: 10px;
+				padding-left: 25px;
+				}
+				
+			p{
+				margin-left: 4%;
+				margin-right: 40%;
+				font-family: Arial;
 				}
 				
 		</style>
@@ -91,8 +114,8 @@
 		
 		<body>
 		
-			<img src="Fisher_Logo.jpg" alt="Fisher Dynamics Logo" style="height: 7vw; width: 14vw; position: absolute; top: 10%; left: 15%;">
-			<img src="Dewesoft_Logo.png" alt="DEWESoft Logo" style="height: 7vw; width: 15vw; position: absolute; top: 10%; right: 15%;">
+			<img src="Pictures/Fisher_Logo.jpg" alt="Fisher Dynamics Logo" style="height: 7vw; width: 14vw; position: absolute; top: 10%; left: 15%;">
+			<img src="Pictures/Dewesoft_Logo.png" alt="DEWESoft Logo" style="height: 7vw; width: 15vw; position: absolute; top: 10%; right: 15%;">
 			
 			<h1 align= "center" class="title" style="margin-left: 30%; margin-right: 30%; margin-top: 20%;"><font size=7>
 			
@@ -102,13 +125,13 @@
 			
 			<br>
 			
-			<h2 align="center">
-			
-				For the SIRIUS SGTM model
+				<h2 align="center">
 				
-			</h2>
+					For the SIRIUS SGTM model
+					
+				</h2>
 			
-			<img class=imgEnlarge src="Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
+			<img src="Pictures/Sirius_Model.png" alt="DEWESoft SIRIUS" style="height: 10vw; width: 20vw; position: relative; left: 35%;" >
 			
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			
@@ -138,17 +161,53 @@
 					
 					<br>
 					
-					<li><a href = "#OpeningSoftware" style="list-style-type: square;">
+					<li><a href = "#OpeningSoftware">
 					
 						Opening the DEWESoft X Software
+						
+					</li></a>
+				
+				</ul></font></u>
+				
+				<br>
+				
+				<li><a href = "#AnalogChannel">
+				
+					Analog Channel Setup
+					
+				</a></li>
+				
+				<ul class=inul align="left"><font size= 3 color= "blue"><u>
+				
+					<br>
+					
+					<li><a href = "#NewSetup">
+					
+						Opening a New Channel Setup
 						
 					</li></a>
 					
 					<br>
 					
-					<li><a href = "#CreateFolder" style="list-style-type: square;">
+					<li><a href = "#ChannelSetup">
 					
-						Create a New Folder
+						Individual Channel Setup
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#Calibration">
+					
+						Channel Calibration
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#Offsetting">
+					
+						Offsetting Zero
 						
 					</li></a>
 				
@@ -164,11 +223,31 @@
 				
 				<br>
 				
-				<li><a href = "#AnalogChannel">
-				
-					Analog Channel Setup
+				<ul class=inul align="left"><font size= 3 color= "blue"><u>
 					
-				</a></li>
+					<li><a href = "#AddSensor">
+					
+						Adding a New Sensor
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#ChangeSensor">
+					
+						Changing Existing Sensor
+						
+					</li></a>
+					
+					<br>
+					
+					<li><a href = "#SensorEditor">
+					
+						Sensor Editor
+						
+					</li></a>
+				
+				</ul></font></u>
 				
 				<br>
 				
@@ -228,29 +307,59 @@
 				
 			</h1></a>
 			
+			<img src="Pictures/Dewesoft_System.jpg" alt="DEWESoft System" class=zoom>
+			
+				<p style="background-color: #F5F5F5; padding: 4px; padding-bottom: 20vw;">
+			
+					Information for the initial setup of the DEWESoft system
+			
+				</p>
+			
+				<h3 align="left"><a name="PoweringUp">
+					
+					Powering Up the DEWESoft System:
+					
+				</h3></a>
+				
+					<ul class=task style="padding-bottom: 17vw;">
+					
+						<img src="Pictures/Dewesoft_Ports.jpg" alt="DEWESoft Ports" class=zoom>
+					
+						<li>
+							Plug the 2-pin Lemo power cable into the "in"
+							on the back of the system
+							<font color="red">
+								(Red)
+							</font>
+						</li>
+						
+						<br>
+						
+						<li>
+							Plug the micro-USB cable from the DEWESoft into
+							the laptop
+							<font color="lightgreen">
+								(Green)
+							</font>
+						</li>
+						
+					</ul>
+			
 			<br>
 			
-			<h3 align="left"><a name="PoweringUp">
-				
-				Powering Up the DEWESoft System:
-				
-			</h3></a>
+				<h3 align="left"><a name="OpeningSoftware">
+					
+					Opening the DEWESoft X Software:
+					
+				</h3></a>
 			
 			<br>
 			
-			<h3 align="left"><a name="OpeningSoftware">
-				
-				Opening the DEWESoft X Software:
-				
-			</h3></a>
-			
-			<br>
-			
-			<h3 align="left"><a name="CreateFolder">
-				
-				Creating a New Folder:
-				
-			</h3></a>
+				<h3 align="left"><a name="CreateFolder">
+					
+					Creating a New Folder:
+					
+				</h3></a>
 			
 			<br>
 			
