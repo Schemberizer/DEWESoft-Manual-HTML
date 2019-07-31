@@ -81,10 +81,26 @@
 			padding: 1% 1% 8% 3%;
 			}
 			
+		ul.btn_list{
+			margin-left: 10%;
+			margin-right: 60%;
+			list-style-type: none;
+			font-family: Arial;
+			padding: 1% 1% 8% 3%;
+			border-left: 0.5vw solid #3c52fe;
+			background-color: lightgrey;
+			}
+			
 		p.info{
 			background-color: #F5F5F5;
 			border-radius: 10px 40px;
 			padding: 1% 1% 10% 1%;
+			}
+			
+		img.diagram{
+			position: absolute;
+			right: 15%;
+			visibility: hidden;
 			}
 			
 		.inul{
@@ -105,6 +121,23 @@
 		}
 			
 	</style>
+	
+	<script type="text/javascript">
+		function show(img_id) {
+		
+			var click = 0;
+			
+			if (click == 0){
+				document.getElementById(img_id).style.visibility='visible';
+				var cur_id = img_id;
+				var click = 1;
+				}
+			
+			else{
+				document.getElementById(cur_id).style.visibility='hidden';
+				}
+			}
+	</script>
 	
 	<head>
 	
@@ -431,7 +464,7 @@
 		
 			<p class=info>
 		
-				Creating new analog channel setups, senosr setups, and preparing a new setup for a test
+				Creating new analog channel setups and preparing the new setup for a test
 		
 			</p>
 		
@@ -443,21 +476,24 @@
 			
 			<img src="Pictures/Screenshot (3).png" alt="Screenshot(3)" class=zoom>
 			<img src="Pictures/Screenshot (4).png" alt="Screenshot(4)" class=zoom style="right: 30%;">
-			<img src="Pictures/Screenshot (3).png" alt="Screenshot(5)" class=zoom style="right: 23%;">
 			
 				<ul class=task>
 				
 					<li>
-						Make sure the DEWESoft system is plugged in
+						Select the folder you wish to create the new setup in
+						
+						<font color="red">
+							(Red)
+						</font>
 					</li>
 					
 					<br>
 				
 					<li>
-						Double click the DEWESoft X3 icon
+						Click the "New Setup" button
 						
-						<font color="red">
-							(Red)
+						<font color="blue">
+							(Blue)
 						</font>
 						
 					</li>
@@ -465,11 +501,43 @@
 					<br>
 					
 					<li>
-						If the DEWESoft system is not plugged in at first, plug it
-						in and a screen will pop up. Press the button to retry
+						Choose what analog channels will be used and name them
 						
 						<font color="lightgreen">
 							(Green)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Change the sample rate of all channels
+						
+						<font color="orange">
+							(Orange)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Add all used channels to "Main Group"
+						
+						<font color="pink">
+							(Pink)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Set the range for the channel
+						
+						<font color="cyan">
+							(Cyan)
 						</font>
 						
 					</li>
@@ -483,6 +551,65 @@
 				Individual Channel Setup
 				
 			</h3></a>
+			
+			<img src="Pictures/Screenshot (4).png" alt="Screenshot(4)" class=zoom>
+			<img src="Pictures/Screenshot (5).png" alt="Screenshot(5)" class=zoom style="right: 30%;">
+			
+				<ul class=task>
+				
+					<li>
+						Click the "setup" button for the channel you want to change
+						
+						<font color="red">
+							(Red)
+						</font>
+					</li>
+					
+					<br>
+				
+					<li>
+						Change the measurement type, range and excitation voltage settings
+						
+						<font color="blue">
+							(Blue)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Implement or create a saved sensor setup
+						
+						<font color="lightgreen">
+							(Green)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Change the sample rate of specific channel
+						
+						<font color="orange">
+							(Orange)
+						</font>
+						
+					</li>
+					
+					<br>
+					
+					<li>
+						Set precision of the channel
+						
+						<font color="pink">
+							(Pink)
+						</font>
+						
+					</li>
+					
+				</ul>
 			
 			<br>
 			
@@ -601,9 +728,58 @@
 		<h1 class="title" align="left"><a name="SensorDiagram">
 		
 			Sensor Diagrams:
-			
+		
 		</h1></a>
 		
+		<img src ="Pictures/Screenshot (10).png" id="img_1" width="40%" height="55%" class=diagram>
+		<img src ="Pictures/Screenshot (9).png" id="img_2" width="40%" height="55%" class=diagram>
+		<img src ="Pictures/Screenshot (8).png" id="img_3" width="40%" height="55%" class=diagram>
+		<img src ="Pictures/Screenshot (7).png" id="img_4" width="40%" height="55%" class=diagram>
+		<img src ="Pictures/Screenshot (6).png" id="img_5" width="40%" height="55%" class=diagram>
+	
+			<ul class=btn_list><font size= 4 color="blue"><u>
+			
+				<li><button onclick="show('img_1')">
+				
+					String Potentiometer
+					
+				</li></button>
+				
+				<br>
+				
+				<li><button onclick="show('img_2')">
+				
+					Inclinometer
+					
+				</li></button>
+				
+				<br>
+				
+				<li><button onclick="show('img_3')">
+				
+					Force Sensor
+					
+				</li></button>
+				
+				<br>
+				
+				<li><button onclick="show('img_4')">
+				
+					Linear Potentiometer
+					
+				</li></button>
+				
+				
+				<br>
+				
+				<li><button onclick="show('img_5')">
+				
+					Torque Sensor
+					
+				</li></button>
+				
+			</ul></font></u>
+			
 		<br><br><br><br><br><br>
 		
 		<h1 class="title" align="left"><a name="Support">
