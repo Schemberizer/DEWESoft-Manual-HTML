@@ -18,9 +18,11 @@
 	<style>
 	
 		html{
+		
 			border-left: 10vw solid #3C52FE;
 			border-right: 10vw solid #3C52FE;
 			}
+		
 			
 		body{
 			margin-left: 4%;
@@ -121,23 +123,6 @@
 		}
 			
 	</style>
-	
-	<script type="text/javascript">
-		function show(img_id) {
-		
-			var click = 0;
-			
-			if (click == 0){
-				document.getElementById(img_id).style.visibility='visible';
-				var cur_id = img_id;
-				var click = 1;
-				}
-			
-			else{
-				document.getElementById(cur_id).style.visibility='hidden';
-				}
-			}
-	</script>
 	
 	<head>
 	
@@ -731,15 +716,21 @@
 		
 		</h1></a>
 		
-		<img src ="Pictures/Screenshot (10).png" id="img_1" width="40%" height="55%" class=diagram>
-		<img src ="Pictures/Screenshot (9).png" id="img_2" width="40%" height="55%" class=diagram>
-		<img src ="Pictures/Screenshot (8).png" id="img_3" width="40%" height="55%" class=diagram>
-		<img src ="Pictures/Screenshot (7).png" id="img_4" width="40%" height="55%" class=diagram>
-		<img src ="Pictures/Screenshot (6).png" id="img_5" width="40%" height="55%" class=diagram>
+		<img src ="" id="img_test" width="40%" height="55%" class=diagram>
+		
+		<script>
+		
+		function show(img) {
+		
+			document.getElementById("img_test").src = img;
+			document.getElementById("img_test").style.visibility = 'visible';
+			
+		}
+	</script>
 	
 			<ul class=btn_list><font size= 4 color="blue"><u>
-			
-				<li><button onclick="show('img_1')">
+				
+				<li><button onclick="show('Pictures/Screenshot (10).png')">
 				
 					String Potentiometer
 					
@@ -747,7 +738,7 @@
 				
 				<br>
 				
-				<li><button onclick="show('img_2')">
+				<li><button onclick="show('Pictures/Screenshot (9).png')">
 				
 					Inclinometer
 					
@@ -755,7 +746,7 @@
 				
 				<br>
 				
-				<li><button onclick="show('img_3')">
+				<li><button onclick="show('Pictures/Screenshot (8).png')">
 				
 					Force Sensor
 					
@@ -763,7 +754,7 @@
 				
 				<br>
 				
-				<li><button onclick="show('img_4')">
+				<li><button onclick="show('Pictures/Screenshot (7).png')">
 				
 					Linear Potentiometer
 					
@@ -772,7 +763,7 @@
 				
 				<br>
 				
-				<li><button onclick="show('img_5')">
+				<li><button onclick="show('Pictures/Screenshot (6).png')">
 				
 					Torque Sensor
 					
