@@ -6,7 +6,7 @@
     *   Author: Joshua B. Schember                    /#\   *
     *   Company: Fisher & Company                    /###\  *
     *   Date Created: 07-15-2019                     /###\  *
-    *   Last Modified: 08-07-2019                   /#####\ *
+    *   Last Modified: 08-15-2019                   /#####\ *
     *                                                 |S|   *
     *                                                       *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -86,7 +86,7 @@
             font-family: Arial;
             background-color: #F5F5F5;
             border-radius: 10px 40px;
-            padding: 1% 1% 8% 3%;
+            padding: 1% 30% 8% 3%;
             }
 
         ul.btn_list{
@@ -94,7 +94,7 @@
             margin-right: 60%;
             list-style-type: none;
             font-family: Arial;
-            padding: 1% 1% 8% 3%;
+            padding: 1% 1% 4% 3%;
             border-left: 0.5vw solid #3c52fe;
             background-color: lightgrey;
             }
@@ -108,6 +108,8 @@
         img.diagram{
             position: absolute;
             right: 15%;
+            height: 20vw;
+            width: 30vw;
             visibility: hidden;
             }
 
@@ -126,7 +128,7 @@
 
         .zoom:hover {
             z-index: 1;
-            transform: scale(12, 8);
+            transform: scale(10, 7);
         }
 
     </style>
@@ -280,14 +282,6 @@
 
             <br>
 
-            <li><a href = "#CounterChannel">
-
-                Counter Channel Setup
-
-            </a></li>
-
-            <br>
-
             <li><a href = "#MeasuringData">
 
                 Measuring Data
@@ -300,7 +294,7 @@
 
                 <li><a href = "#MeasureScreen">
 
-                    Measurement Screen
+                    Setting Up the Graph Output
 
                 </li></a>
 
@@ -308,17 +302,11 @@
 
                 <li><a href = "#DesignTab">
 
-                    Design Tab
+                    Taking Measurements
 
                 </li></a>
 
                 <br>
-
-                <li><a href = "#EditGraph">
-
-                    Editing Graphs
-
-                </li></a>
 
             </ul></font></u>
 
@@ -895,6 +883,92 @@
                 Adding a New Sensor
 
             </h3></a>
+            
+                <ul class=task>
+                
+                    <li>
+                    
+                        In the setup window, press the "Edit Sensor" button
+                        
+                        <font color="red">
+                        
+                            (Red)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Enter in the sensor information
+                        
+                        <font color="lightgreen">
+                        
+                            (Green)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Set up the sensor settings
+                        
+                        <font color="orange">
+                        
+                            (Orange)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Calibrate the sensor
+                    
+                        <font color="blue">
+                        
+                            (Blue)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Save the setup
+                        
+                        <font color="cyan">
+                        
+                            (Cyan)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Check advanced settings, make sure "Allow user to change offset" is checked
+                        
+                        <font color="pink">
+                        
+                            (Pink)
+                            
+                        </font>
+                        
+                    </li>
+                
+                </ul>
 
             <br>
 
@@ -903,6 +977,80 @@
                 Changing an Existing Sensor
 
             </h3></a>
+            
+            <ul class=task>
+                
+                    <li>
+                    
+                        Select the sensor you want to edit using the drop down window
+                        
+                        <font color="red">
+                        
+                            (Red)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Press the "Edit Sensor" button
+                        
+                        <font color="lightgreen">
+                        
+                            (Green)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Unlock the sensor settings
+                        
+                        <font color="orange">
+                        
+                            (Orange)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Change the settings for the sensor
+                    
+                        <font color="blue">
+                        
+                            (Blue)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Save the setup
+                        
+                        <font color="cyan">
+                        
+                            (Cyan)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                
+                </ul>
 
             <br>
 
@@ -911,14 +1059,6 @@
                 Sensor Editor
 
             </h3></a>
-
-        <br><br><br><br><br><br>
-
-        <h1 class="title" align="left"><a name="CounterChannel">
-
-            Counter Channel Setup:
-
-        </h1></a>
 
         <br><br><br><br><br><br>
 
@@ -936,25 +1076,149 @@
 
             <h3 align="left"><a name="MeasureScreen">
 
-                Measurement Screen
+                Setting Up the Graph Output
 
             </h3></a>
+            
+                <ul class=task>
+                
+                    <li>
+                        
+                        Go to the Measurement screen
+                        
+                        <font color="red">
+                        
+                            (Red)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Press the "Design" tab
+                        
+                        <font color="blue">
+                        
+                            (Blue)
+                            
+                        </font>
+                    
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Pick the desired output display, the X-Y recorder is standard
+                        
+                        <font color="lightgreen">
+                        
+                            (Green)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Select the channels that will be output on the graph. First selected becomes x-axis,
+                        all other selections get added to y-axis
+                        
+                        <font color="orange">
+                        
+                            (Orange)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Set tick marks and label options
+                        
+                        <font color="cyan">
+                        
+                            (Cyan)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                </ul>
 
             <br>
 
             <h3 align="left"><a name="DesignTab">
 
-                Design Tab
+                Taking Measurements
 
             </h3></a>
-
-            <br>
-
-            <h3 align="left"><a name="EditGraph">
-
-                Editing Graph
-
-            </h3></a>
+            
+                <ul class=task>
+                
+                    <li>
+                    
+                        Press the "Measure" tab
+                        
+                        <font color="Red">
+                        
+                            (Red)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        DEWESoft automatically starts taking measurements when you enter the measure tab.
+                        Press "Stop" to end the measuring
+                        
+                        <font color="blue">
+                        
+                            (Blue)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Press "Play" to begin measuring again
+                        
+                        <font color="lightgreen">
+                        
+                            (Green)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                    <br>
+                    
+                    <li>
+                    
+                        Press "Pause" to stop current measurment and keep data on screen
+                        
+                        <font color="orange">
+                        
+                            (Orange)
+                            
+                        </font>
+                        
+                    </li>
+                    
+                </ul>
 
         <br><br><br><br><br><br>
 
@@ -1032,6 +1296,14 @@
                     Torque Sensor
 
                 </li></button>
+                
+                <br>
+                
+                <li><button onclick="show('Pictures/Screenshot (16).png')">
+                
+                    Current Sensor
+                    
+                </li></button>
 
             </ul></font></u>
 
@@ -1043,27 +1315,122 @@
 
         </h1></a>
         
+
         <img src="Pictures/Button_Index(8).png" alt="Button_Index(8)" class=zoom>
         <img src="Pictures/Button_Index(9).png" alt="Button_Index(9)" class=zoom style="right: 30%;">
         <img src="Pictures/Button_Index(10).png" alt="Button_Index(10)" class=zoom style="right: 23%;">
         
-            <p class=info>
+            <p class=info style="padding: 1% 30% 1% 1%;">
+            
+                1. Change between Measure and Analysis screens
+                <br><br>
+                2. Change between Setup files, Channel setup, and Measure tabs
+                <br><br>
+                3. Create/alter files in the file list
+                <br><br>
+                4. Setup folders list
+                <br><br>
+                5. Browse files in computer
+                <br><br>
+                6. Search for files
+                <br><br>
+                7. Change how files are displayed
+                <br><br>
+                8. Save the current setup
+                <br><br>
+                9. Change between Analog sensors and Storing pages
+                <br><br>
+                10. Create/display math functions that manipulate sensor data
+                <br><br>
+                11. Change sample rate for all sensors
+                <br><br>
+                12. Change offset for all sensors
+                <br><br>
+                13. Check which sensors will be used when storing data
+                <br><br>
+                14. Channel names
+                <br><br>
+                15. Sensor measurement range
+                <br><br>
+                16. Type of measurement being taken
+                <br><br>
+                17. Set minimum values for sensor
+                <br><br>
+                18. Set maximum values for sensor
+                <br><br>
+                19. Zero specific sensors
+                <br><br>
+                20. Set sensors to groups
+                <br><br>
+                21. Enter the setup window for specific sensors
+                <br><br>
+                22. Channel name
+                <br><br>
+                23. Min and max values
+                <br><br>
+                24. Set the precision of the sensor
+                <br><br>
+                25. Set the sample of the sensor
+                <br><br>
+                26. Move to the setup of the next sensor
+                <br><br>
+                27. Load/create saved sensors
+                <br><br>
+                28. Change settings for sensor measurement, range, and excitation
+                <br><br>
+                29. Set first point of calibrations
+                <br><br>
+                30. Set second point of calibration
+                <br><br>
+                
             </p>
             
         <img src="Pictures/Button_Index(11).png" alt="Button_Index(11)" class=zoom>
         <img src="Pictures/Button_Index(12).png" alt="Button_Index(12)" class=zoom style="right: 30%;">
-        <img src="Pictures/Button_Index(14).png" alt="Button_Index(14)" class=zoom style="right: 23%;">
+        <img src="Pictures/Button_Index(13).png" alt="Button_Index(14)" class=zoom style="right: 23%;">
         
-            <p class=info>
+            <p class=info style="padding: 1%;">
+            
+                31. Play, pause, stop and store functions for manual measurement
+                <br><br>
+                32. Display options for graph tick marks and axis
+                <br><br>
+                33. Choose what channel is displayed on the graph
+                <br><br>
+                34. Copy, paste, and delete graph displays in the design window
+                <br><br>
+                35. Choose the display for data
+                <br><br>
+                36. Change the size and location of the display
+                <br><br>
+                37. Manipulate the selected file
+                <br><br>
+                38. Load, delete, copy, paste files
+                <br><br>
+                39. Swap between analysis tabs
+                <br><br>
+                40. Choose where files are automatically stored
+                <br><br>
+                41. Show advanced options for file storage
+                <br><br>
+                42. Set limits on storing quantities
+                <br><br>
+                43. Set default file name
+                <br><br>
+                44. Change aquisition rate
+                <br><br>
+                45.
+                <br><br>
+            
             </p>
         
-        <img src="Pictures/Button_Index(13).png" alt="Button_Index(11)" class=zoom>
-        <img src="Pictures/Button_Index(12).png" alt="Button_Index(12)" class=zoom style="right: 30%;">
+        <img src="Pictures/Button_Index(14).png" alt="Button_Index(11)" class=zoom>
+        <img src="Pictures/Button_Index(14).png" alt="Button_Index(12)" class=zoom style="right: 30%;">
         <img src="Pictures/Button_Index(14).png" alt="Button_Index(14)" class=zoom style="right: 23%;">
             
         
-        <p class=info>
-        </p>
+            <p class=info>
+            </p>
         
         <br><br><br><br><br><br>
 
